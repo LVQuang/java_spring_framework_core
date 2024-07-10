@@ -5,8 +5,9 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="airtel" class="dev.lvpq.SpringIoc.Airtel"/>
-    <bean id="vodaphone" class="dev.lvpq.SpringIoc.Vodaphone"/>
-    <bean id="jio" class="dev.lvpq.SpringIoc.Jio"/>
+    <bean id="student" class="dev.lvpq.DependencyInjection.Student">
+        <constructor-arg name="name" value="student A"/>
+        <constructor-arg name="id" value="1"/>
+    </bean>
 
 </beans>
